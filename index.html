@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Pricing Component</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Pricing Component</title>
 
-    <link rel="stylesheet" href="./styles/style.css">
-  </head>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
 
-  <body>
-    <!-- <div class="bg-pattern-wrapper">
-      <svg xmlns="http://www.w3.org/2000/svg" width="2560" height="449">
-        <path fill="#F1F5FE" fill-rule="evenodd" d="M0 0h2560v449H191.5C85.737 449 0 363.263 0 257.5V0z" />
-      </svg>
-    </div> -->
+<body>
+  <div class="container">
 
-    <div class="container">
-      <div class="header">
-        <h1>Simple, traffic-based pricing</h1>
-        <div class="subtitle">
-          <span>Sign-up for our 30-day trial.</span>
-          <span>No credit card requierd.</span>
-        </div>
+    <div class="header">
+      <h1 class="header__title">Simple, traffic-based pricing</h1>
+      <div class="header__subtitle">
+        <span>Sign-up for our 30-day trial.</span>
+        <span>No credit card requierd.</span>
       </div>
-      <div class="card">
-        <p>100K k page views</p>
+    </div>
 
-        <input type="range">
+    <div class="card">
+      <!-- <div class="card__header">
+        <h3 class="card__subtitle">100K pageviews</h3>
+      </div> -->
 
-        <div class="price-container">
+      <div class="card__body">
+        <h3 class="card__subtitle">100K pageviews</h3>
+
+        <input class="input__range" type="range">
+
+        <div class="price__wrapper">
           <span class="price">$16.00</span>
-          <span class="price"> / month</span>
+          <span class="price__frequency"> / month</span>
         </div>
 
-        <div class="billing-frequency">
+
+        <div class="billing__wrapper">
           <span>Monthly Billing</span>
           <label class="switch">
             <input type="checkbox">
@@ -42,32 +44,44 @@
           </label>
           <span>Yearly Billing</span>
         </div>
+      </div>
 
-        <div class="card-footer">
-          <div class="list-item">
+
+
+      <div class="card__footer">
+        <div class="list">
+          <div class="list__item">
             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
-              <path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1" />
+              <path fill="none" stroke="#10D8C4" stroke-width="2"
+                d="M1 4.134l1.907 1.908L7.949 1" />
             </svg>
             <span>Unlimited websites</span>
           </div>
-          <div class="list-item">
+          <div class="list__item">
             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
-              <path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1" />
+              <path fill="none" stroke="#10D8C4" stroke-width="2"
+                d="M1 4.134l1.907 1.908L7.949 1" />
             </svg>
             <span>100% data ownership</span>
           </div>
-          <div class="list-item">
+          <div class="list__item">
             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
-              <path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1" />
+              <path fill="none" stroke="#10D8C4" stroke-width="2"
+                d="M1 4.134l1.907 1.908L7.949 1" />
             </svg>
             <span>Email reports</span>
           </div>
+
+        </div>
+
+        <div class="cta">
           <button class="button">Start my trial</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 
 </html>
